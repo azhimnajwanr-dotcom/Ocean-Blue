@@ -9,3 +9,11 @@ function toggleMenu(){
     }
 
 }
+
+const links = document.querySelectorAll('.mobile-menu a');
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        document.getElementById('mobileMenu').style.display = 'none';
+    });
+});
